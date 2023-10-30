@@ -45,6 +45,7 @@ header {
     background-size: cover;
     color: #fff; /* ヘッダーのフォントカラー */
     text-align: center;
+    width: 100%;
     padding: 50px;
     height: 200px; /* ヘッダーの高さ */
 	 border-bottom: 4px solid #7694a5; /* ヘッダー下部の飾り線 */
