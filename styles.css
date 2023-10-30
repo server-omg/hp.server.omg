@@ -39,7 +39,7 @@ h1 {
 
 /* Headerのスタイルを修正 */
 header {
-    background: url('header.png') center center; /* Headerの背景画像 */
+    background: url('picture/header.png') center center; /* Headerの背景画像 */
     background-size: cover;
     color: #fff; /* ヘッダーのフォントカラー */
     text-align: center;
@@ -204,7 +204,7 @@ table a:hover {
 /* Minecraft風の石ブロックデザイン */
 footer {
     background: #383838; /* 石ブロックのテクスチャ画像 */
-    background-image: url('stone_texture.png'); /* 石ブロックのテクスチャ画像のパスを指定 */
+    background-image: url('picture/stone_texture.png'); /* 石ブロックのテクスチャ画像のパスを指定 */
     background-size: 100%;
     color: #fff; /* フォントカラー */
     text-align: center;
@@ -215,7 +215,7 @@ footer {
     position: relative;
     overflow: hidden;
     transition: background 1s;
-	 background-image: url('stone_texture.png');
+	 background-image: url('picture/stone_texture.png');
     background-size: 32px 32px;
 	 border-radius: 32px 32px 0px 0px;
 
