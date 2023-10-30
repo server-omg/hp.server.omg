@@ -60,6 +60,9 @@ header {
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
     border-radius: 32px;
     margin-top: 20px;
+　  display: flex;
+　  align-items: center;
+　  justify-content: center;
 }
 
 .server-info {
@@ -211,6 +214,7 @@ footer {
     background-size: 100%;
     color: #fff; /* フォントカラー */
     text-align: center;
+    width: 100%;
     padding: 10px;
     clear: both;
     font-size: 16px; /* フォントサイズ */
@@ -238,6 +242,7 @@ footer:after {
     display: block;
     margin-top: 16px;
     font-weight: bold;
+    width: 100%;
 }
 
 /* ホバー時のスタイル */
