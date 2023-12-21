@@ -290,6 +290,66 @@ a {
 color:#fafafa;
 text-decoration: none;
 }
+
+.cb{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #555;
+}
+.number{
+    color: white;
+    font-weight: bold;
+    font-family: 'Noto Sans JP',sans-serif;
+    font-size: 32px;
+    text-align: center;
+    position: relative;/*付け忘れ注意*/
+    cursor: pointer;/*カーソルが変化すると分かりやすいかも!?*/
+}
+input{
+    margin-top: 80px;
+    font-size: 32px;
+}
+/* ここまでは見た目調整 */
+
+/* ツールチップ */
+@keyframes fade-tooltip {
+    to { opacity: 0; }
+}
+.js-copied::before{
+    content:'コピーしました！';
+    white-space: nowrap;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%,-120%);
+    font-size: 16px;
+    padding: 10px;
+    animation-name: fade-tooltip;
+    animation-duration: .5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    border-radius: 2px;
+    background: #eee;
+    color: #222;
+}
+/* アイコン */
+.js-clipBoard::after{
+    content: '';
+    display: block;
+    background-image: url(https://ryo-sukeblog.net/wp-content/uploads/2023/01/copy-regular.svg);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(150%,-50%);
+}
         
     </style>
     <title>Ω鯖</title>
@@ -325,7 +385,12 @@ text-decoration: none;
                 <br>主に統合版Minecraft・Discordで活動しています。</p>
             <br>
             <h2>サーバー情報</h2>
-            <p><img src="picture/address.svg"> 統合版サーバーアドレス：empty.org</p>
+		
+            <p><img src="picture/address.svg"> 統合版サーバーアドレス：<div class="cb">
+  <p class="number js-clipBoard" data-clipboard-text="empty.org">empty.org</p>
+  <input type="text" aria-label="text">
+</div></p>
+		
             <p><img src="picture/port.svg"> ポート番号：19132</p>
             <p><font color=#ff0000>※現在、サーバーは準備中です、公開までしばらくお待ち下さい。</font></p>
             <br>
