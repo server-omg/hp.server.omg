@@ -362,11 +362,8 @@ text-decoration: none;
             <br>
             <h2>サーバー情報</h2>
 		
-            <img src="picture/addres.svg">サーバーアドレス：<p id="campaign-code">empty.org</p>
-            <p><a href="javascript:void(0);" onclick="javascript:clipboard();" style="cursor: pointer;"><i class="fa fa-clipboard" aria-hidden="true"></i> <span id="clipboard-info">コードをクリップボードにコピーする</span></a></p>
-		
-            <img src="picture/port.svg">ポート番号：<p id="campaign-code">19132</p>
-            <p><a href="javascript:void(0);" onclick="javascript:clipboard();" style="cursor: pointer;"><i class="fa fa-clipboard" aria-hidden="true"></i> <span id="clipboard-info">コードをクリップボードにコピーする</span></a></p>
+            <img src="picture/addres.svg">サーバーアドレス：empty.org
+            <img src="picture/port.svg">ポート番号：19132
 		
             <p><font color=#ff0000>※現在、サーバーは準備中です、公開までしばらくお待ち下さい。</font></p>
             <br>
@@ -436,16 +433,6 @@ text-decoration: none;
         <br>
         <br>
     </footer>
-
-
-	 <script>
- function clipboard(){
-   var text = document.getElementById('campaign-code').innerText;
-   navigator.clipboard.writeText(text).then(e => {
-     document.getElementById("clipboard-info").innerText = "コピーしました";
-   });
- }
- </script>
 
 
 	
