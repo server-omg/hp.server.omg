@@ -290,42 +290,6 @@ a {
 color:#fafafa;
 text-decoration: none;
 }
-
-/* ツールチップ */
-@keyframes fade-tooltip {
-    to { opacity: 0; }
-}
-.js-copied::before{
-    content:'コピーしました！';
-    white-space: nowrap;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(50%,-120%);
-    font-size: 16px;
-    padding: 10px;
-    animation-name: fade-tooltip;
-    animation-duration: .5s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    border-radius: 2px;
-    background: #eee;
-    color: #222;
-}
-/* アイコン */
-.js-clipBoard::after{
-    content: '';
-    display: block;
-    background-image: url(https://ryo-sukeblog.net/wp-content/uploads/2023/01/copy-regular.svg);
-    background-size: contain;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(150%,-50%);
-}
         
     </style>
     <title>Ω鯖</title>
@@ -357,15 +321,17 @@ text-decoration: none;
     <div class="container">
         <div class="server-info">
             <h2>概要</h2>
-            <p>Ω鯖はどんな人でも参加できる、総合コミュニティサーバーです。
-                <br>主に統合版Minecraft・Discordで活動しています。</p>
+            <p>このサーバーはどんな人でも参加できる、総合コミュニティサーバーです。
+                <br>主に統合版Minecraft・Discordで活動しています。
+	        <br></p>
             <br>
             <h2>サーバー情報</h2>
 		
-            <img src="picture/addres.svg">サーバーアドレス：empty.org
-            <img src="picture/port.svg">ポート番号：19132
+            <p><img src="picture/address.svg">サーバーアドレス：empty.org</p>
+            <p><img src="picture/port.svg">ポート番号：19132</p>
 		
             <p><font color=#ff0000>※現在、サーバーは準備中です、公開までしばらくお待ち下さい。</font></p>
+	    <p>サーバーに関するお問い合わせは公式Discordから<b>Logic Mercurius</b>までご連絡ください。</p>
             <br>
             <h2>《共同》管理者・運営</h2>
             <p>
