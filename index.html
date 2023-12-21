@@ -362,7 +362,8 @@ text-decoration: none;
             <br>
             <h2>サーバー情報</h2>
 		
-            <p><img src="picture/address.svg"> 統合版サーバーアドレス：empty.org </p>
+            <p><img src="picture/address.svg"> 統合版サーバーアドレス：<input id="copyTarget" type="text" value="empty.org" readonly><button onclick="copyToClipboard()"><img src="copy.svg"></button></p>
+		
             <p><img src="picture/port.svg"> ポート番号：19132</p>
             <p><font color=#ff0000>※現在、サーバーは準備中です、公開までしばらくお待ち下さい。</font></p>
             <br>
@@ -432,5 +433,21 @@ text-decoration: none;
         <br>
         <br>
     </footer>
+
+
+	<script>
+        function copyToClipboard() {
+            // コピー対象をJavaScript上で変数として定義する
+            var copyTarget = document.getElementById("copyTarget");
+
+            // コピー対象のテキストを選択する
+            copyTarget.select();
+
+            // 選択しているテキストをクリップボードにコピーする
+            document.execCommand("Copy");
+        }
+    </script>
+
+	
 </body>
 </html>
