@@ -16,6 +16,11 @@ body {
     padding: 0;
 }
 
+body a {
+    color:#000000;
+    text-decoration: none;
+}
+
 body h2 {
   border-bottom: 4px solid #0a1573;
 }
