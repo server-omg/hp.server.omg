@@ -287,6 +287,10 @@ footer:hover {
 }
 
 footer a {
-color:#fafafa;
-text-decoration: none;
+    color:#fafafa;
+    text-decoration: none;
+}
+
+li {
+    padding: 5px 0;
 }
